@@ -1,0 +1,88 @@
+.banner-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #D2E4EE;
+}
+
+.banner-image{
+    width: 100%;
+    height: 500px;
+    background:  url('../../../../../public/images/home-banner.png') no-repeat center center;
+    background-size: cover;
+}
+
+span{
+    color: #0d4a57
+}
+
+.banner-card{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #C2CCD5;
+    margin-top: -300px;
+    z-index: 10;
+    position: relative;
+
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 30px;
+    padding: 40px;
+}
+
+.cerena-title{
+    color:#d05165
+}
+
+.cerena-desc{
+    font-size: 3.1rem;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:50%;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 30px;
+}
+
+.about button{
+    background-color: #d05165;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.title, .about{
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(20%) ;
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
