@@ -1,0 +1,83 @@
+<header>
+    <div class="header-container">
+        <div class="header-menu">
+            <div class="header-mobile-menu">
+                <mat-icon fontIcon="menu"></mat-icon>
+            </div>
+            <div class="header-menu-logo">
+                <a aria-current="page" routerLink="/home">
+                    <img class="cerena-logo" src="/images/logo_CERENA_6c71b_1.png"  alt="CERENA - Centro de Reabilitação Neuropediátrica">
+                </a>
+            </div>
+            <div class="header-menu-nav">
+                <div class="">
+                    <nav class="header-nav">
+                        <ul class="navigation-options">
+                            <li class="navigation-option">
+                                <a aria-current="page" routerLink="/home">Início</a>
+                            </li>
+                            <li class="navigation-option">
+                                <a href="sobre-nos.html">Sobre nós</a>
+                            </li>
+
+                            <li class="navigation-option">
+                                <a href="servicos.html">Serviços</a>
+                            </li>
+                            <li class="navigation-option">
+                                <a href="entre-em-contato-conosco.html">Contato</a>
+                            </li>
+                            <li class="navigation-option">
+                                <a href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-contact">
+                <ul class="header-contact-options">
+                    <li class="contact-info">
+                        <div class="contact-open">
+                            <mat-icon fontIcon="mail_outlined" class="mail-icon"></mat-icon>
+                            <mat-icon fontIcon="keyboard_arrow_down" class="arrow_icon"></mat-icon>
+                        </div>
+
+                        <ul class="contact-list">
+                            <li (click)="redirectToTelephone()">
+
+                                <mat-icon fontIcon="phone_callback_outlined"></mat-icon>
+                                <div class="contact-option">
+                                    <a href="tel:(41) 99104-7046">(41) 99104-7046</a>
+                                    <span>Agendamento</span>
+                                </div> 
+                            </li>
+                            <li (click)="redirectToEmail()">
+                                <mat-icon fontIcon="mail_outlined"></mat-icon> 
+                                <div class="contact-option">
+                                    <a href="mailto:cerenaagendamento@cerenatea.com.br">
+                                        <span>cerenaagendamento@cerenatea.com.br</span>
+                                    </a>
+                                    <span>e-mail</span>
+                                </div>
+                            </li>
+                            <div class="line"></div>
+                            <li (click)="redirectToInstagram()">
+                                <fa-icon [icon]="faInstagram" class="instagram_icon"></fa-icon>
+                                <div class="contact-option">
+                                    <a href="https://instagram.com/teacerena" target="_blank" title="Instagram" aria-label="Instagram">
+                                        <span>Instagram</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="contact-us-list">
+                        <a class="contact-us-card" href="https://wa.me/41991047046?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"
+                            target="_blank" rel="noreferrer">
+                            <span>ENTRE EM CONTATO CONOSCO</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
