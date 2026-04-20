@@ -43,6 +43,11 @@ main{
     padding: 20px 0 20px;
 }
 
+.redirect:hover{
+    cursor: pointer;
+    color: var(--accentColor);
+}
+
 .contato-email,
 .contato-telefone,
 .contato-pessoal{

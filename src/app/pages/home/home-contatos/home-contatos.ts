@@ -14,6 +14,15 @@ export class HomeContatos {
 
   constructor(private emailService: EmailService){}
 
+  redirectToEmail(){
+    const url = 'mailto:cerenaagendamento@cerenatea.com.br';
+    window.open(url, '_blank');
+  }
+
+  redirectToTelephone(telefone:string){
+    window.open(telefone, '_blank');
+  }
+
   contato : Contato = {
     nome:"",
     email:"",

@@ -14,14 +14,14 @@
             <div class="contatos-information-options">
                 <div class="contato-email">
                     <span class="contact-topic">Email</span>
-                    <span class="contact-object">cerenasupervisaorecepcao@cerenatea.com.br</span>
+                    <span class="contact-object redirect" (click)="redirectToEmail()" >cerenasupervisaorecepcao@cerenatea.com.br</span>
                 </div>
 
                 <div class="contato-telefone">
                     <span class="contact-topic">Telefone</span>
                     <ul class="contact-object">
-                        <li><span>(41) 3024-1691</span></li>
-                        <li><span>(41) 99967-1416</span></li>
+                        <li><span class="redirect" (click)="redirectToTelephone('(41) 3024-1691')">(41) 3024-1691</span></li>
+                        <li><span class="redirect" (click)="redirectToTelephone('(41) 99967-1416')">(41) 99967-1416</span></li>
                     </ul>
                 </div>
 

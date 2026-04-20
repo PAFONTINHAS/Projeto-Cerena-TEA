@@ -5,10 +5,11 @@ import { HomeBanner } from "../home-banner/home-banner";
 import { ApoioTea } from "../apoio-tea/apoio-tea";
 import { HomeServicos } from "../home-servicos/home-servicos";
 import { HomeContatos } from "../home-contatos/home-contatos";
+import { HomeSocial } from "../home-social/home-social";
 
 @Component({
   selector: 'app-home-page',
-  imports: [HeaderComp, FooterComp, HomeBanner, ApoioTea, HomeServicos, HomeContatos],
+  imports: [HeaderComp, FooterComp, HomeBanner, ApoioTea, HomeServicos, HomeContatos, HomeSocial],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })
