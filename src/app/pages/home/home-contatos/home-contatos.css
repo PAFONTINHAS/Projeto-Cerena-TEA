@@ -1,0 +1,119 @@
+main{
+    background-color: var(--bodyBg);
+    color: var(--bodyColor);
+}
+
+.contatos-container{
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--widgetTintBackgroundColor);
+}
+
+.contatos-information{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+}
+
+.contatos-information-direction,
+.contatos-information-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-topic{
+    color: var(--accentColor);
+    font-size: 1.5rem;
+    padding: 20px 0 20px 0;
+}
+
+.contact-title{
+    font-size: 3.2rem;
+    max-width: 90%;
+    line-height: 60px;
+}
+.contato-direction-content{
+    max-width: 90%;
+    font-size: 1.2rem;
+    padding: 20px 0 20px;
+}
+
+.contato-email,
+.contato-telefone,
+.contato-pessoal{
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;
+}
+
+.contact-object{
+    font-size: 1.2rem;
+    padding: 15px 0 15px 0;
+}
+
+.contact-object li{
+    list-style: none;
+}
+
+
+.contatos-forms{
+    flex: 0.4;
+    max-height: 730px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C2CCD5;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+form{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.2rem;
+    padding: 10px 0 10px 0;
+}
+
+input, textarea{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.obs{
+    height: 150px;
+}
+
+.btn-enviar{
+    background-color: var(--accentColor);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: none;
+    border: none;
+    margin-top: 40px;
+    padding: 15px 25px 15px 25px;
+    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+}
+
