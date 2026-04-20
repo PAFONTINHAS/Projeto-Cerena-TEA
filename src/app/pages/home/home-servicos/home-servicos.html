@@ -1,0 +1,54 @@
+<main>
+    <div class="servicos-container">
+        <div class="servicos-text">
+            <div class="servicos-text-title">
+                <span class="servicos-text-title">Nossos Serviços</span>
+
+                <div class="servicos-text-description">
+                    <span class="servicos-text-description">
+                    Realizamos avaliações diagnósticas detalhadas para crianças, visando 
+                    identificar e compreender as necessidades individuais de cada pessoa
+                    no espectro do autismo.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="servicos-content">
+
+            <swiper-container 
+            slides-per-view="3" 
+            space-between="20"
+            loop= "true"
+            speed="3500"
+            autoplay="true"
+            [autoplay]="{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false
+            }"
+            loop="true"
+            breakpoints='{"400": {"slidesPerView": 2},  "640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3}, "1200": {"slidesPerView": 4}}'>
+            
+            @for (servico of servicos; track $index) {
+
+                <swiper-slide>
+                    <div class="service-card">
+                        <div class="img-container">
+                            <img [src]="servico.imagem" [alt]="servico.tituloServico">
+                        </div>
+                        <div class="card-content">
+                            <h3>{{ servico.tituloServico }}</h3>
+                        </div>
+                    </div>
+                </swiper-slide>
+            }
+            </swiper-container>
+            
+            <button class="btn-saiba-mais">SAIBA MAIS</button>
+
+        </div>
+
+    </div>
+</main>
