@@ -1,0 +1,22 @@
+<main>
+    <section class="services-container">
+        <div class="header-content">
+            <span class="overline">Nossas Especialidades</span>
+            <h2 class="title">Serviços Especializados</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" *ngFor="let servico of servicos">
+                <div class="card-image">
+                    <img [src]="servico.imagem" [alt]="servico.tituloServico">
+                </div>
+                <div class="card-body">
+                    <h3>{{ servico.tituloServico }}</h3>
+                    <p>{{ servico.descricao }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

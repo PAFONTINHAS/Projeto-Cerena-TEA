@@ -1,10 +1,8 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { ServicoCard } from '../../../core/models/servicoCard';
 
 
-export interface ServicoCard{
-  tituloServico:String;
-  imagem:String;
-}
+
 
 @Component({
   selector: 'app-home-servicos',
