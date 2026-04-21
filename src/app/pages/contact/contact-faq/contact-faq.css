@@ -46,7 +46,6 @@ main {
 
 .faq-card {
     border-radius: 12px;
-    border: 1px solid var(--secondaryBorder);
     border: 1px solid var(--seventhColor);
     overflow: hidden;
     transition: all 0.3s ease;

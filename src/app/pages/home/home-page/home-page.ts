@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComp } from "../../../shared/components/header-comp/header-comp";
+import { HeaderComp, NavigationRoutes } from "../../../shared/components/header-comp/header-comp";
 import { FooterComp } from "../../../shared/components/footer-comp/footer-comp";
 import { HomeBanner } from "../home-banner/home-banner";
 import { ApoioTea } from "../apoio-tea/apoio-tea";
@@ -14,5 +14,7 @@ import { ContactUsComp } from "../../../shared/components/contact-us-comp/contac
   styleUrl: './home-page.css',
 })
 export class HomePage {
-
+  public get navigationRoutes(): typeof NavigationRoutes{
+    return NavigationRoutes;
+  }
 }

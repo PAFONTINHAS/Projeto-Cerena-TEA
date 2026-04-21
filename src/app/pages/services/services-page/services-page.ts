@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComp } from "../../../shared/components/header-comp/header-comp";
+import { HeaderComp, NavigationRoutes } from "../../../shared/components/header-comp/header-comp";
 import { FooterComp } from "../../../shared/components/footer-comp/footer-comp";
 import { OurServices } from "../our-services/our-services";
 
@@ -10,5 +10,7 @@ import { OurServices } from "../our-services/our-services";
   styleUrl: './services-page.css',
 })
 export class ServicesPage {
-
+  public get navigationRoutes(): typeof NavigationRoutes{
+    return NavigationRoutes;
+  }
 }

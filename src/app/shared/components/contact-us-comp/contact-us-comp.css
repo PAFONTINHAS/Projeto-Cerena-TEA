@@ -7,17 +7,30 @@ main{
     gap: 20px;
     width: 100%;
     height: 100%;
-    padding: 50px;
     display: flex;
+    flex-direction: row;
+    padding: 20px;
     align-items: start;
     justify-content: center;
     background-color: var(--widgetTintBackgroundColor);
 }
 
-.contatos-information{
+.contatos-information,
+.contatos-forms{
     display: flex;
     flex-direction: column;
-    flex: 0.4;
+    flex: 1;
+    padding: 20px;
+}
+
+.contatos-information {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    min-width: 0; /* CRITICAL: Permite que o flex-item encolha além do tamanho do conteúdo */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contatos-information-direction,
@@ -28,19 +41,21 @@ main{
 
 .contact-topic{
     color: var(--accentColor);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+
     padding: 20px 0 20px 0;
 }
 
-.contact-title{
-    font-size: 3.2rem;
-    max-width: 90%;
-    line-height: 60px;
+.contact-title {
+    font-size: clamp(1.8rem, 5vw, 3.1rem);
+    max-width: 100%; 
+    line-height: 1.2; 
 }
-.contato-direction-content{
-    max-width: 90%;
-    font-size: 1.2rem;
-    padding: 20px 0 20px;
+
+.contato-direction-content {
+    max-width: 100%;
+    font-size: 1.1rem;
+    padding: 10px 0 20px;
 }
 
 .redirect:hover{
@@ -56,9 +71,14 @@ main{
     align-items: flex-start;
 }
 
-.contact-object{
-    font-size: 1.2rem;
-    padding: 15px 0 15px 0;
+.contact-object {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    padding: 15px 0;
+    /* Adicione estas linhas abaixo */
+    word-wrap: break-word;
+    word-break: break-word; /* Força a quebra em navegadores antigos */
+    overflow-wrap: anywhere; /* Estratégia moderna para quebrar em qualquer lugar */
+    max-width: 100%;
 }
 
 .contact-object li{
@@ -67,7 +87,6 @@ main{
 
 
 .contatos-forms{
-    flex: 0.4;
     max-height: 730px;
     display: flex;
     flex-direction: column;
@@ -101,7 +120,8 @@ input, textarea{
     align-items: flex-start;
     justify-content: start;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+
     
 }
 
@@ -122,3 +142,12 @@ input, textarea{
     cursor: pointer;
 }
 
+@media (max-width:900px) {
+
+    .contatos-container{
+        flex-direction: column;
+    }
+
+
+
+}

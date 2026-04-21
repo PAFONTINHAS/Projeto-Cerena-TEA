@@ -1,12 +1,13 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { ServicoCard } from '../../../core/models/servicoCard';
+import { RouterLink } from "@angular/router";
 
 
 
 
 @Component({
   selector: 'app-home-servicos',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home-servicos.html',
   styleUrl: './home-servicos.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

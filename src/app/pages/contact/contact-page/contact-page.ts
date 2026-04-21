@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComp } from "../../../shared/components/header-comp/header-comp";
+import { HeaderComp, NavigationRoutes } from "../../../shared/components/header-comp/header-comp";
 import { FooterComp } from "../../../shared/components/footer-comp/footer-comp";
 import { ContactUsComp } from "../../../shared/components/contact-us-comp/contact-us-comp";
 import { ContactLocation } from '../contact-location/contact-location';
@@ -12,5 +12,9 @@ import { ContactFaq } from '../contact-faq/contact-faq';
   styleUrl: './contact-page.css',
 })
 export class ContactPage {
+
+    public get navigationRoutes(): typeof NavigationRoutes{
+      return NavigationRoutes;
+    }
 
 }
