@@ -1,0 +1,22 @@
+<main>
+
+    <div class="newsletter-container">
+        <div class="newsletter-invite">
+            <div class="invite-title">
+                <span class="title">Assine nossa Newsletter</span>
+            </div>
+            <div class="invite-desc">
+                <span>
+                    Quer ficar por dentro? Assine nossa newsletter para receber todas as notícias e atualizações
+                </span>
+            </div>
+        </div>
+        
+        <div class="newsletter-input">
+    
+            <input type="email" class="email-input" [(ngModel)]="email" name="email" placeholder="Digite seu e-mail aqui">
+            <span class="btn-enviar" (click)="adicionarANewsletter()">></span>
+        </div>
+    </div>
+
+</main>

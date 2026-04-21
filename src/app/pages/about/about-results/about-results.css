@@ -1,0 +1,211 @@
+main {
+  background-color: var(--bodyBg);
+  color: var(--bodyColor);
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--widgetTintBackgroundColor);
+  width: 100%;
+}
+
+.content-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title {
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 45px;
+  padding-top: 20px;
+}
+
+.timeline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(12px) scale(0.96);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+}
+
+.timeline-item.reveal {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.timeline-topic {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+  background-color: rgba(208, 81, 101, 0.22);
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+}
+
+/* “Traço correndo” */
+.line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #d05165;
+  transform: scaleX(0);
+}
+
+/* Linha da esquerda cresce da esquerda para a direita */
+.line-left::after {
+  transform-origin: left center;
+}
+
+/* Linha da direita também cresce da esquerda para a direita */
+.line-right::after {
+  transform-origin: left center;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d05165;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  background-color: white;
+  box-shadow: 0 0 0 0 rgba(208, 81, 101, 0.4);
+  transform: scale(0.7);
+  opacity: 0.6;
+}
+
+/* Miolo da bolinha */
+.dot::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #d05165;
+  transform: scale(0);
+}
+
+/* Ao revelar, executa a sequência */
+.timeline-item.reveal .line-left::after {
+  animation: drawLine 0.45s ease forwards;
+}
+
+.timeline-item.reveal .dot {
+  animation: unlockDot 0.28s ease forwards 0.45s, pulse 1.5s infinite 0.8s;
+}
+
+.timeline-item.reveal .dot::after {
+  animation: fillDot 0.2s ease forwards 0.52s;
+}
+
+.timeline-item.reveal .line-right::after {
+  animation: drawLine 0.45s ease forwards 0.72s;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 2rem;
+}
+
+.content span {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+@keyframes drawLine {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes unlockDot {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fillDot {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(208, 81, 101, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(208, 81, 101, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(208, 81, 101, 0);
+  }
+}
+
+/* @media (max-width: 700px) {
+
+    .timeline-topic{
+        flex-direction: column;
+    }
+
+    .line{
+        transform: rotate(90deg);
+    }
+
+    
+} */

@@ -9,5 +9,9 @@ export class EmailService {
   enviarEmailDuvida(contato:Contato){
 
   }
+
+  adicionarANewsletter(email: string){
+
+  }
   
 }

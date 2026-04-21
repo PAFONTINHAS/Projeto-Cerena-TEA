@@ -1,0 +1,35 @@
+<main #timelineSection>
+    <div class="results-container">
+        <div class="content-title">
+            <span class="title">Nossos resultados</span>
+
+        </div>
+
+        <div class="timeline-container">
+
+            <div class="timeline">
+
+                @for (resultado of resultados; track $index) {  
+    
+                    <div class="timeline-item" #resultadoCard [class.reveal]="isRevealed[$index]">
+                        
+                        <div class="timeline-topic">
+
+                            <div class="line line-left"></div>
+                            <div class="dot"></div>
+                            <div class="line line-right"></div>
+                        </div>
+                        <div class="content">
+                            <h3>{{resultado.title}}</h3>
+                            <span>{{resultado.desc}}</span>
+                        </div>
+                    </div>
+    
+                }
+            </div>
+
+
+        </div>
+
+    </div>
+</main>
