@@ -1,0 +1,45 @@
+<main>
+
+    <div class="faq-container">
+
+        <div class="faq-content">
+            
+            <div class="content-topic">
+                <span class="topic">Perguntas Frequentes (FAQ)</span>
+            </div>
+    
+            <div class="content-title">
+                <span class="title">
+                    Perguntes Frequentes
+                </span>
+                
+            </div>
+            
+            <div class="red-line"></div>
+        </div>
+
+    </div>
+
+    <div class="faq-list">
+
+        @for ( topic of FAQ; track $index) {
+
+    
+            <div class="faq-card" [class.active]="topic.open">
+                <button class="faq-question" (click)="toggleFaq($index)">
+                    <span>{{ topic.question }}</span>
+                    <i class="chevron-icon" [class.rotate]="topic.open">▼</i>
+                </button>
+                
+                <div class="faq-answer" [style.max-height]="topic.open ? '500px' : '0px'">
+                    <div class="answer-content">
+                        <p>{{ topic.answer }}</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+</main>

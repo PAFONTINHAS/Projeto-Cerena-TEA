@@ -4,12 +4,12 @@ import { FooterComp } from "../../../shared/components/footer-comp/footer-comp";
 import { HomeBanner } from "../home-banner/home-banner";
 import { ApoioTea } from "../apoio-tea/apoio-tea";
 import { HomeServicos } from "../home-servicos/home-servicos";
-import { HomeContatos } from "../home-contatos/home-contatos";
 import { HomeSocial } from "../home-social/home-social";
+import { ContactUsComp } from "../../../shared/components/contact-us-comp/contact-us-comp";
 
 @Component({
   selector: 'app-home-page',
-  imports: [HeaderComp, FooterComp, HomeBanner, ApoioTea, HomeServicos, HomeContatos, HomeSocial],
+  imports: [HeaderComp, FooterComp, HomeBanner, ApoioTea, HomeServicos, HomeSocial, ContactUsComp],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })

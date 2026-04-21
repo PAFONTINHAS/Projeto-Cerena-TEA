@@ -1,0 +1,138 @@
+main {
+  background-color: var(--bodyBg);
+  color: var(--bodyColor);
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--widgetTintBackgroundColor);
+  width: 100%;
+  padding: 40px;
+}
+
+.location-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.topic{
+    color: var(--accentColor);
+    font-size: 1.5rem;
+}
+
+.content-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.red-line{
+    width: 120px;
+    background-color: var(--accentColor);
+    height: 3px;
+    margin: 10px 0 20px 0;
+}
+
+
+.map-container {
+  max-width: var(--pageContainer);
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden; /* Faz o mapa seguir o arredondamento */
+  box-shadow: 0 10px 30px rgba(13, 74, 87, 0.1);
+  border: 4px solid var(--seventhColor);
+  width: 100%;
+}
+
+.map-container iframe {
+  display: block;
+}
+
+/* Ajustes no Título para seguir o padrão dos serviços */
+.overline {
+  color: var(--accentColor);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
+.title-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--accentColor);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+/* Card de Horários */
+.hours-card {
+  background: var(--seventhColor);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(13, 74, 87, 0.08);
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--secondaryBorder);
+}
+
+.hours-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--headlineH1Color);
+}
+
+.hours-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--secondaryColor);
+}
+
+.hour-row:last-child {
+  border-bottom: none;
+}
+
+.hour-row .day {
+  font-weight: 500;
+  color: var(--bodyColor);
+}
+
+.hour-row .time {
+  color: var(--accentColor);
+  font-weight: 700;
+}
+
+.hour-row.closed .time {
+  color: #999;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Responsividade para o Título */
+.title {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
