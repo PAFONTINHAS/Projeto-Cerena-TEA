@@ -4,6 +4,7 @@ import { AboutPage } from './pages/about/about-page/about-page';
 import { ServicesPage } from './pages/services/services-page/services-page';
 import { ContactPage } from './pages/contact/contact-page/contact-page';
 import { BlogPage } from './pages/blog/blog-page/blog-page';
+import { BlogArticleSection } from './pages/blog/blog-article-section/blog-article-section';
 
 export const routes: Routes = [
     {path: '', redirectTo:'home', pathMatch:'full'},
@@ -12,4 +13,5 @@ export const routes: Routes = [
     {path: 'servicos', component: ServicesPage},
     {path: 'entre-em-contato-conosco', component: ContactPage},
     {path: 'blog', component: BlogPage},
+    {path: 'blog/:title', component: BlogArticleSection}
 ];

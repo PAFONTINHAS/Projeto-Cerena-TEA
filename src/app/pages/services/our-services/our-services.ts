@@ -16,7 +16,7 @@ export class OurServices {
       descricao: `A Terapia Ocupacional com enfoque em Integração Sensorial busca ajudar a criança a compreender e organizar melhor os estímulos do ambiente. 
       Por meio de atividades planejadas, trabalha-se o equilíbrio, a coordenação motora, o tato, a audição e outros sentidos, promovendo maior autonomia, 
       adaptação às rotinas e qualidade de vida.`,
-      imagem: "images/terapia-ocupacional-IS.png"
+      imagem: "images/servico-terapia-ocupacional-is.webp"
 
     },
     {
@@ -25,14 +25,14 @@ export class OurServices {
       o objetivo é favorecer a independência funcional da criança no dia a dia. São desenvolvidas habilidades motoras, 
       cognitivas e sociais, sempre adaptadas às necessidades individuais, de forma estruturada e positiva, 
       para ampliar o repertório de comportamentos adequados e reduzir barreiras à participação social.`,
-      imagem: "images/terapia-ocupacional-ABA.png"
+      imagem: "/images/servico-terapia-ocupacional-aba.webp"
     },
     {
       tituloServico: "FONOAUDIOLOGIA - ABA",
       descricao: `A Fonoaudiologia aplicada à metodologia ABA trabalha aspectos fundamentais da comunicação, 
       linguagem e alimentação. Por meio de estratégias baseadas em evidências científicas, busca-se estimular a fala, a compreensão, 
       a interação social e o uso funcional da linguagem, oferecendo recursos para que a criança se comunique de maneira mais eficaz em diferentes contextos.`,
-      imagem: "images/fonoaudiologia-ABA.png"
+      imagem: "images/servico-fonoaudiologia.webp"
 
     },
     {
@@ -40,14 +40,14 @@ export class OurServices {
       descricao: `A Psicologia com abordagem ABA atua no desenvolvimento emocional e comportamental da criança. 
       O trabalho é direcionado à promoção de habilidades sociais, regulação emocional e resolução de desafios comportamentais, 
       sempre considerando o contexto familiar e escolar. O foco é apoiar a criança em seu desenvolvimento integral, fortalecendo sua autoestima e bem-estar.`,
-      imagem: "images/psicologia-ABA.png"
+      imagem: "images/servico-psicologa.webp"
     },
     {
       tituloServico: "PSICOPEDAGOGIA",
       descricao: `A Psicopedagogia tem como foco identificar e intervir nas dificuldades de aprendizagem. 
       Por meio de estratégias lúdicas e personalizadas, busca-se compreender o processo de aprender de cada criança, 
       fortalecendo suas potencialidades e auxiliando na superação de obstáculos que possam estar interferindo no desempenho escolar e no desenvolvimento cognitivo.`,
-      imagem: "images/psicopedagogia.jpg"
+      imagem: "images/home-servico-psicopedagogia.jpg"
     },
     {
       tituloServico: "PSICOTERAPIA - ABA E TCC",

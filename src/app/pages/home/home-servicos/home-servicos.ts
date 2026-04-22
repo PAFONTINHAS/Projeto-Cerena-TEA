@@ -17,29 +17,29 @@ export class HomeServicos implements OnInit{
   servicos: ServicoCard[] = [
     {
       tituloServico: "TERAPIA OCUPACIONAL - INTEGRAÇÃO SENSORIAL",
-      imagem: "images/terapia-ocupacional-IS.png"
+      imagem: "images/home-terapia-ocupacional-IS.png"
 
     },
     {
       tituloServico: "TERAPIA OCUPACIONAL - ABA",
-      imagem: "images/terapia-ocupacional-ABA.png"
+      imagem: "images/home-terapia-ocupacional-ABA.png"
     },
     {
       tituloServico: "FONOAUDIOLOGIA - ABA",
-      imagem: "images/fonoaudiologia-ABA.png"
+      imagem: "images/home-fonoaudiologia-ABA.png"
 
     },
     {
       tituloServico: "PSICOLOGIA",
-      imagem: "images/psicologia-ABA.png"
+      imagem: "images/home-psicologia-ABA.png"
     },
     {
       tituloServico: "PSICOPEDAGOGIA",
-      imagem: "images/psicopedagogia.jpg"
+      imagem: "images/home-servico-psicopedagogia.jpg"
     },
     {
       tituloServico: "PSICOTERAPIA - ABA E TCC",
-      imagem: "images/psicoterapia-ABA-TCC.jpg"
+      imagem: "images/home-psicoterapia-ABA-TCC.jpg"
     }
   ]
 
