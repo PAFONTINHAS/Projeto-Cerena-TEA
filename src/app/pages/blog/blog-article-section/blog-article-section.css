@@ -1,0 +1,93 @@
+.article-wrapper {
+    background-color: var(--bodyBg); /* Aquele azul clarinho do seu styles.css */
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.article-container {
+    max-width: 800px; /* Largura ideal para leitura */
+    margin: 0 auto;
+    background: var(--whiteColor);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(13, 74, 87, 0.05);
+}
+
+/* Cabeçalho */
+.article-header {
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--secondaryColor);
+    padding-bottom: 30px;
+}
+
+.article-meta {
+    color: var(--accentColor); /* O rosa/coral para destaque */
+    font-size: var(--caption3FontSize);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.article-title {
+    color: var(--bodyColor);
+    font-family: var(--headlineH2FontFamily);
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.article-summary {
+    font-size: 1.1rem;
+    color: var(--mutedColor);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Corpo do Texto */
+.paragraph-block {
+    margin-bottom: 25px;
+}
+
+.paragraph-subtitle {
+    color: var(--bodyColor);
+    font-family: var(--headlineH2FontFamily);
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.paragraph-text {
+    color: var(--bodyText3Color);
+    font-size: 18px; /* Texto um pouco maior para leitura confortável */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Botão de Voltar */
+.btn-back {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    background-color: var(--accentColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.btn-back:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .article-container {
+        padding: 20px;
+    }
+    .article-title {
+        font-size: 28px;
+    }
+}

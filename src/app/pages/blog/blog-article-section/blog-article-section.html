@@ -1,0 +1,29 @@
+<main class="article-wrapper">
+    
+   @if(article){
+       <article class="article-container">
+        <button class="btn-back" (click)="voltar()">← Voltar para o Blog</button>
+         <header class="article-header">
+           <span class="article-meta">{{ article.readingTime }} de leitura</span>
+           <h1 class="article-title">{{ article.title }}</h1>
+           <p class="article-summary">{{ article.summary }}</p>
+         </header>
+     
+         <section class="article-body">
+     
+             @for(paragraph of article.content; track $index){
+                 <div class="paragraph-block">
+                     @if (paragraph.subTitle) {
+                         <h2 class="paragraph-subtitle">
+                           {{ paragraph.subTitle }}
+                         </h2>
+                     }
+                   <p class="paragraph-text">{{ paragraph.text }}</p>
+                 </div>
+             }
+         </section>
+     
+     
+       </article>
+   }
+</main>
