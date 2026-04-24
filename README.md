@@ -1,59 +1,55 @@
-# ProjetoCerena
+# 🌿Projeto CERENA - Migração e Redesign
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
+Repositório dedicado à modernização e redesign do portal **CERENA (Centro de Reabilitação Neuropediátrica)**. Este projeto consistiu na migração de uma arquitetura legada para uma interface contemporânea, focada em performance, acessibilidade e uma experiência de leitura otimizada para artigos e conteúdos educativos.
 
-## Development server
+## 🚀 O Projeto
 
-To start a local development server, run:
+O objetivo principal foi reestruturar o site existente, tirando o projeto antigo de HTML e CSS puros e trazendo para o framework Angular, que dá mais autonomia, segurança e legibilidade para o projeto.
 
-```bash
-ng serve
+### Principais Implementações:
+
+-   **Redesign Completo:** Interface moderna utilizando padrões atuais de UX/UI.
+    
+-   **Arquitetura de Artigos:** Novo layout para leitura de artigos, com foco em legibilidade e hierarquia visual.
+    
+-   **Responsividade:** Otimização total para dispositivos móveis, tablets e desktops.
+    
+-   **Refatoração de Código:** Limpeza e estruturação de HTML/CSS legados para garantir manutenibilidade.
+    
+
+## 🛠️ Tecnologias Utilizadas
+
+Para este projeto, foquei em tecnologias que garantem leveza e rapidez no carregamento:
+
+-   **Angular:** Framework para desenvolvimento de interfaces gráficas.
+-  **Firebase Hosting**: Hospedagem do site    
+-   **Metodologias:** Organização de código focada em componentes reutilizáveis.
+    
+
+## 📁 Estrutura do Repositório
+
+Plaintext
+
+```
+├── public/images    # Imagens
+├── app/core         # Armazenamento de entidades e serviços
+├── app/shared       # Componentes reutilizáveis
+└── app/pages        # Páginas do projeto
+
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📈 Melhorias em Relação ao Legado
 
-## Code scaffolding
+1.  **Performance:** Redução no tempo de carregamento através da otimização de assets.  
+2.  **UI/UX:** Substituição de layouts datados por uma estética limpa e intuitiva.
+    
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+----------
 
-```bash
-ng generate component component-name
-```
+## 👨‍💻 Desenvolvedor
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Este projeto faz parte do meu portfólio de desenvolvimento e consultoria técnica.
 
-```bash
-ng generate --help
-```
+**Peterson Fontinhas** _Desenvolvedor Full Stack | Entusiasta de Clean Code e Backend_
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+----------
