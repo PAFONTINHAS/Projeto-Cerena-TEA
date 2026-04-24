@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { BlogArticle } from '../../../core/models/blogArticle';
-import { Router, RouterLink, RouterLinkActive } from "@angular/router";
+import { Router } from "@angular/router";
 import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-blog-article-section',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [],
   templateUrl: './blog-article-section.html',
   styleUrl: './blog-article-section.css',
 })

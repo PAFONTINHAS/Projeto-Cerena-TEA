@@ -19,7 +19,8 @@ export class ContactUsComp {
     }
   
     redirectToTelephone(telefone:string){
-      window.open(telefone, '_blank');
+      const url = `tel:${telefone}`
+      window.open(url, '_blank');
     }
   
     contato : Contato = {

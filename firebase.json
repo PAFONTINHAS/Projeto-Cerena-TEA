@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "production",
+    "public": "dist/projeto-cerena/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
